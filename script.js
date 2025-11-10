@@ -4,7 +4,7 @@ const viewer = document.getElementById('imageViewer');
 const fullImage = document.getElementById('fullImage');
 const closeViewer = document.getElementById('closeViewer');
 
-// When an image is clicked, show full view
+
 galleryItems.forEach(img => {
   img.addEventListener('click', () => {
     viewer.style.display = 'flex';
@@ -12,7 +12,6 @@ galleryItems.forEach(img => {
   });
 });
 
-// Close when clicking X or background
 closeViewer.addEventListener('click', () => {
   viewer.style.display = 'none';
 });

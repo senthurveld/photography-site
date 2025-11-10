@@ -14,7 +14,6 @@
     --color3: #3f100c;
     /*logo*/
     --color4: #d50c0c;
-    ;
     /*hover*/
     --color5: #5d110a;
     /*h2*/
@@ -40,11 +39,11 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-snap-type: mandatory;
-
 }
 
-.body {
-    background: #cba193;
+body {
+    background: linear-gradient(to right, #ad8767, rgba(209, 185, 149, 0.899), #ad8767);
+    font-family: "Poppins", sans-serif;
 }
 
 .carousel-inner .carousel-item img {
@@ -54,7 +53,7 @@ html {
 }
 
 .navbar {
-    background-color: #E8C7A1;
+    background: linear-gradient(to bottom, #755c47dc, #cfb283, #755c474c);
     padding: 0;
 }
 
@@ -70,21 +69,27 @@ html {
     padding: 0;
     color: #3f100c;
     font-weight: 800;
+    text-shadow: 0 0 1px #3f100c;
+}
+
+.navbar-brand h2:hover {
+    text-shadow: 0 0 .2px #3f100c;
+
 }
 
 #nav-list li a {
     font-family: "Montserrat", sans-serif;
     font-size: 1.1em;
     font-weight: 500;
-    color: #532418;
+    color: #34170f;
     /* text-wrap: none; */
     border-radius: 8px;
-    transition: color 0.4s ease-in-out;
+    transition: color 0.2s ease-in-out;
 
 }
 
 #nav-list li a:hover {
-    color: #8a0202;
+    color: #740000d1;
     text-shadow: 0 0 .5px;
     /* background-color: #d3b490ea; */
     border-radius: 8px;
@@ -122,7 +127,8 @@ html {
 .services h2,
 .package h2,
 .marriage-title,
-#marriage h2 {
+#marriage h2,
+.form {
     padding-top: 60px;
     padding-bottom: 30px;
     font-family: "Playfair Display", sans-serif;
@@ -468,7 +474,7 @@ html {
         margin: 0 !important;
     }
 
-   
+
 }
 
 @media screen and (max-width:1009px) {
@@ -536,7 +542,10 @@ html {
 #marriage .row .col-md-4,
 .col-md-8 {
     /* width: 350px; */
-    background-color: #eed7b3d0;
+    background-color: #cbb48eda;
+    margin: #cbb48eda;
+    padding: #cbb48eda;
+    border: #cbb48eda;
 }
 
 #marriage h5 {
@@ -548,6 +557,35 @@ html {
 #marriage p {
     font-family: "Poppins", sans-serif;
 }
+
+.amount {
+    font-size: 1.08em;
+    font-weight: 500;
+}
+
+/* Form section  */
+
+form {
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #69421b;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px 0px;
+    background-color: #e4d2b5da;
+    font-family: "Poppins", sans-serif;
+}
+
+
+input[type=submit] {
+    background-color: #a46c28ca;
+    border-radius: 2px;
+    padding: 8px;
+}
+
 
 
 /* WhatsApp floating button (fixed bottom-right) */
